@@ -1,17 +1,16 @@
 using UnityEngine;
 
-public class PlayerSys : MonoBehaviour
+public class PlayerStats : MonoBehaviour
 {
     
-    
-    [SerializeField] int health, maxHealth = 100;
+    [SerializeField] public float health, maxHealth = 100f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         health = maxHealth;
     }
     
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
 
@@ -19,5 +18,5 @@ public class PlayerSys : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    } 
 }
