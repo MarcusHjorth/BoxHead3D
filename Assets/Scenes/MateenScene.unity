@@ -558,6 +558,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7577562427225882903, guid: 25d0c3e293029ab448406b4348ec25c8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8953022414698162649, guid: 25d0c3e293029ab448406b4348ec25c8, type: 3}
       propertyPath: damage
       value: 20
@@ -569,7 +573,7 @@ PrefabInstance:
     - target: {fileID: 8953022414698162649, guid: 25d0c3e293029ab448406b4348ec25c8, type: 3}
       propertyPath: playerSys
       value: 
-      objectReference: {fileID: 1808396420}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6575190649748570320, guid: 25d0c3e293029ab448406b4348ec25c8, type: 3}
     m_RemovedGameObjects: []
@@ -1149,9 +1153,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 279931165159250702, guid: 29fb5c270b1b2ee41b2b346d9834ab91, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1808396420}
-    - targetCorrespondingSourceObject: {fileID: 279931165159250702, guid: 29fb5c270b1b2ee41b2b346d9834ab91, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1808396421}
     - targetCorrespondingSourceObject: {fileID: 5393404679704956320, guid: 29fb5c270b1b2ee41b2b346d9834ab91, type: 3}
       insertIndex: -1
@@ -1181,21 +1182,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4172830244400387348, guid: 29fb5c270b1b2ee41b2b346d9834ab91, type: 3}
   m_PrefabInstance: {fileID: 1489194337}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1808396420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202718796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec1c408c9fba6d142a16319d5cc5c94f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 100
-  playerAtm: {fileID: 0}
 --- !u!114 &1808396421
 MonoBehaviour:
   m_ObjectHideFlags: 0
