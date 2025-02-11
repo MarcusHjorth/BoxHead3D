@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    public float multiplier = 1.2f;
+    public float multiplier = 1.4f;
     public float duration = 4f;
 
     public GameObject pickupEffect;
