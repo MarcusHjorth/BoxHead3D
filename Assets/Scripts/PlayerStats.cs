@@ -4,6 +4,7 @@ public class PlayerStats : MonoBehaviour
 {
     
     [SerializeField] public float health, maxHealth = 100f;
+    public AttributesManager playerAtm;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
