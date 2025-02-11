@@ -31,8 +31,11 @@ public class PowerUp : MonoBehaviour
         //Apply effect to player
         // (Make player smaller) player.transform.localScale *= --multiplier;
 
-        PlayerStats stats = player.GetComponent<PlayerStats>();
-        stats.health *= multiplier;
+        AttributesManager stats = player.GetComponent<AttributesManager>();
+        if (stats.health != 100)
+        {
+            stats.health = 100;
+        }
         
         //Disable graphics for powerup (mesh renderer and collider)
         //GetComponent<MeshRenderer>().enabled = false;
