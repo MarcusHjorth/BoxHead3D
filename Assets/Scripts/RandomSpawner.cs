@@ -18,13 +18,13 @@ public class RandomSpawner : MonoBehaviour
     {
         while (true)
         {
-            float waitTime = Random.Range(2f, 4f);
+            float waitTime = Random.Range(30f, 60f);
             yield return new WaitForSeconds(waitTime);
 
             // Check if the number of spawned pickups is below the limit
             if (spawnedPickups.Count < maxSpawnedPickups)
             {
-                Vector3 randomSpawnPosition = new Vector3(Random.Range(-15, 21), -10, Random.Range(-19, 17));
+                Vector3 randomSpawnPosition = new Vector3(Random.Range(-7, 18), -10, Random.Range(14, 11));
                 GameObject newPickup = Instantiate(pickUpPrefab, randomSpawnPosition, Quaternion.identity);
 
                 // Add the new pickup to the list

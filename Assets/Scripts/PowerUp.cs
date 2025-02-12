@@ -8,7 +8,7 @@ public class PowerUp : MonoBehaviour
     public float duration = 4f;
     private RandomSpawner randomSpawner;
 
-    public GameObject pickupEffect;
+    //public GameObject pickupEffect;
 
     private void Start()
     {
@@ -26,11 +26,12 @@ public class PowerUp : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         //Spawn a cool effect
-        Instantiate(pickupEffect, transform.position, transform.rotation);
+        //Instantiate(pickupEffect, transform.position, transform.rotation);
 
         //Apply effect to player
         // (Make player smaller) player.transform.localScale *= --multiplier;
 
+        //Heal player to full HP
         AttributesManager stats = player.GetComponent<AttributesManager>();
         if (stats.health != 100)
         {
@@ -52,6 +53,6 @@ public class PowerUp : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         //Reverse the effect on player
-        stats.health /= multiplier;
+        //stats.health /= multiplier;
     }
 }
