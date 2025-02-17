@@ -9,14 +9,15 @@ public class DamageTester : MonoBehaviour
     
     private void Update()
     {
+        //Deal player damage to the enemy health
         if (Input.GetKeyDown(KeyCode.F11))
         {
-            enemyAtm.DealDamage(enemyAtm.gameObject);
+            playerAtm.DealDamage(enemyAtm.gameObject);
         }
         
         if (Input.GetKeyDown(KeyCode.F12))
         {
-            playerAtm.DealDamage(playerAtm.gameObject);
+            enemyAtm.DealDamage(playerAtm.gameObject);
         }
     }
 }

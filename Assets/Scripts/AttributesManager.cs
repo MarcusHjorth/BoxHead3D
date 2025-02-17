@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class AttributesManager : MonoBehaviour
 {
-    [SerializeField] public float health;
-    [SerializeField] public float damage;
+    public float health;
+    public float damage;
 
     public void TakeDamage(float amount)
     {
